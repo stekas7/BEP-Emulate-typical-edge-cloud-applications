@@ -4,9 +4,9 @@ Run `kubectl apply -Rf \<path-of-folder>\kubernetes` and wait for all the pods t
 
 Run `kubectl apply -f \<path-of-folder>\hr-client\hr-client.yaml` to create the hr-client pod
 
-Copy the `wkr2` folder to the hr-client pod
+Copy the `wkr2` folder to the `hr-client` pod
 
-Log in to hr-client pod
+Log in to `hr-client` pod
 
 Install wrk2 with `sudo apt-get wrk2`
 
