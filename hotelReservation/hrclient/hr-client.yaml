@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hr-client
+  labels:
+    death-star-project: hotel-res
+    app: hr-client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      death-star-project: hotel-res
+      app: hr-client
+  template:
+    metadata:
+      labels: 
+        death-star-project: hotel-res
+        app: hr-client
+    spec:
+      containers:
+      - name: hr-client
+        image: deathstarbench/wrk2-client
+        command:  ["sleep", "365d"]
+        imagePullPolicy: Always
