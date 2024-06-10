@@ -11,3 +11,5 @@ Log in to hr-client pod
 Install wrk2 with `sudo apt-get wrk2`
 
 Running `python3 command.py` will run the workload script and start workload generation
+
+The original application can be found in the DeathStarBench repository `https://github.com/delimitrou/DeathStarBench.git`
